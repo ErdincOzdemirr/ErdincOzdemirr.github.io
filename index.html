@@ -70,6 +70,175 @@
             }
         }
 
+        /* Navbar Brand Responsive */
+        .navbar-brand h1 {
+            font-size: 2.5rem;
+            margin: 0.5rem 0;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 1400px) {
+            #flyingIcon {
+                width: 4cm;
+                height: 4cm;
+            }
+            #contactMe h1 {
+                font-size: 2.2rem;
+            }
+            #contactMe h2 {
+                font-size: 1.8rem;
+            }
+            #contactMe h4, #contactMe h5, #contactMe p, #contactMe label {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .navbar-brand h1 {
+                font-size: 2.2rem;
+            }
+            #flyingIcon {
+                width: 3.5cm;
+                height: 3.5cm;
+            }
+            #contactMe h1 {
+                font-size: 2rem;
+            }
+            #contactMe h2 {
+                font-size: 1.6rem;
+            }
+            #contactMe h4, #contactMe h5, #contactMe p, #contactMe label {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .navbar-brand h1 {
+                font-size: 1.8rem;
+            }
+            #flyingIcon {
+                width: 3cm;
+                height: 3cm;
+            }
+            #contactMe h1 {
+                font-size: 1.8rem;
+            }
+            #contactMe h2 {
+                font-size: 1.5rem;
+            }
+            #contactMe h4, #contactMe h5, #contactMe p, #contactMe label {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-brand h1 {
+                font-size: 1.5rem;
+            }
+            #flyingIcon {
+                width: 2.5cm;
+                height: 2.5cm;
+            }
+            #contactMe .row {
+                flex-direction: column;
+            }
+
+            #contactMe .col-12.col-lg-5 {
+                order: 1;
+                margin-bottom: 2rem;
+            }
+
+            #contactMe .col-12.col-lg-7 {
+                order: 2;
+            }
+
+            #contactMe h1 {
+                font-size: 1.6rem;
+            }
+            #contactMe h2 {
+                font-size: 1.4rem;
+            }
+            #contactMe h4, #contactMe h5, #contactMe p, #contactMe label {
+                font-size: 0.9rem;
+            }
+
+            /* Formu ve yazıları tam ortaya hizala */
+            #contactMe form {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar-brand h1 {
+                font-size: 1.2rem;
+            }
+            #flyingIcon {
+                width: 2cm;
+                height: 2cm;
+            }
+            #contactMe h1 {
+                font-size: 1.4rem;
+            }
+            #contactMe h2 {
+                font-size: 1.2rem;
+            }
+            #contactMe h4, #contactMe h5, #contactMe p, #contactMe label {
+                font-size: 0.8rem;
+            }
+            #contactMe .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Navbar Padding/Margin Responsive */
+        .navbar_first {
+            padding: 1rem 2rem;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 992px) {
+            .navbar_first {
+                padding: 0.7rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar_first {
+                padding: 0.5rem 1rem;
+                font-size: 0.65rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar_first {
+                padding: 0.3rem 0.5rem;
+                font-size: 0.55rem;
+            }
+        }
+
+        /* Navbar Links Responsive */
+        .navbar-nav .nav-link {
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav .nav-link {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar-nav .nav-link {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.65rem;
+            }
+        }
+
+
     </style>
 </head>
 
@@ -78,78 +247,61 @@
 <main class="flex-shrink-0">
     <!-- Navigation-->
     <nav class="sticky-top">
-        <div class="navbar_first d-flex justify-content-evenly px-5 py-2 bg-gradient-primary-to-secondary">
-            <div class="d-none d-lg-flex gap-3">
-                <div class="first_ d-flex text-white align-items-center">
-                    <div class="pe-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-telephone-fill first_info_svg" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"></path>
-                        </svg>
+        <div class="bg-gradient-primary-to-secondary">
+            <div class="container d-flex justify-content-between align-items-center navbar_first py-2">
+                <!-- İletişim bilgileri -->
+                <div class="d-none d-lg-flex gap-3">
+                    <!-- İletişim Bilgileri -->
+                    <!-- Telefon -->
+                    <div class="first_ d-flex text-white align-items-center">
+                        <div class="pe-2">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div class="first_info">
+                            <a href="https://wa.me/905067471812?text=Merhaba%20size%20web%20siteniz%20%C3%BCzerinden%20ula%C5%9F%C4%B1yorum.">+90 506 747 18 12</a>
+                        </div>
                     </div>
-                    <div class="first_info  min_w">
-                        <a href="https://wa.me/905067471812?text=Merhaba%20size%20web%20siteniz%20üzerinden%20ulaşıyorum.">+90
-                            506 747 18 12</a>
+                    <!-- Email -->
+                    <div class="first_ d-flex text-white align-items-center">
+                        <div class="pe-2">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <div class="first_info">
+                            <a href="mailto:erdincozdemir1812@gmail.com">erdincozdemir1812@gmail.com</a>
+                        </div>
                     </div>
-                </div>
-                <div class="first_ d-flex text-white align-items-center">
-                    <div class=" pe-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-envelope-fill first_info_svg" viewBox="0 0 16 16">
-                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"></path>
-                        </svg>
-                    </div>
-                    <div class="first_info">
-                        <a href="mailto:erdincozdemir1812@gmail.com?subject=Yeni İş Fırsatı Talebi&body=Merhaba, sizinle web siteniz üzerinden iletişime geçiyorum.">erdincozdemir1812@gmail.com</a>
-                    </div>
-                </div>
-                <div class="first_ d-flex text-white align-items-center">
-                    <div class=" pe-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-geo-alt-fill first_info_svg" viewBox="0 0 16 16">
-                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"></path>
-                        </svg>
-                    </div>
-                    <div class="first_info">
-                        <a href="javascript:void(0)">Istanbul / Turkiye</a>
+                    <!-- Lokasyon -->
+                    <div class="first_ d-flex text-white align-items-center">
+                        <div class="pe-2">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div class="first_info">
+                            <a href="javascript:void(0)">Istanbul / Turkiye</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="d-flex gap-3 align-items-center">
-                <a class="first_icons text-decoration-none scale-up-center "
-                   href="https://www.linkedin.com/in/erdincozdemir/"><i class="bi bi-linkedin"></i></a>
-                <a class="first_icons text-decoration-none scale-up-center "
-                   href="mailto:erdincozdemir1812@gmail.com?subject=Yeni İş Fırsatı Talebi&body=Merhaba, sizinle web siteniz üzerinden iletişime geçiyorum."><i
-                        class="bi bi-envelope-fill"></i></a>
-                <a class="first_icons text-decoration-none scale-up-center "
-                   href="https://wa.me/905067471812?text=Merhaba%20size%20web%20siteniz%20üzerinden%20ulaşıyorum."><i
-                        class="bi bi-whatsapp"></i></a>
-                <a class="first_icons text-decoration-none scale-up-center " href="https://github.com/ErdincOzdemirr"><i
-                        class="bi bi-github"></i></a>
+                <!-- Sosyal İkonlar -->
+                <div class="d-flex gap-3 align-items-center">
+                    <a class="first_icons text-decoration-none" href="https://www.linkedin.com/in/erdincozdemir/"><i class="bi bi-linkedin"></i></a>
+                    <a class="first_icons text-decoration-none" href="mailto:erdincozdemir1812@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                    <a class="first_icons text-decoration-none" href="https://wa.me/905067471812?text=Merhaba%20size%20web%20siteniz%20%C3%BCzerinden%20ula%C5%9F%C4%B1yorum."><i class="bi bi-whatsapp"></i></a>
+                    <a class="first_icons text-decoration-none" href="https://github.com/ErdincOzdemirr"><i class="bi bi-github"></i></a>
+                </div>
             </div>
         </div>
-        <div class="navbar navbar-expand-lg navbar-light bg-light py-4 ">
-            <div class="container px-4 d-flex align-items-center">
 
-                <div class="d-flex align-items-center" style="height: 100%;">
-                    <a class="navbar-brand m-2 ps-2 " href="index.html"
-                       style="font-family: 'Amsterdam Four_ttf', cursive; display: flex; align-items: center;">
-                        <h1 class="fw-bolder m-2" style="font-size: 3.5rem;"><span class="text-gradient d-inline">Erdinc Ozdemir</span>
-                        </h1>
-                    </a>
+        <div class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container d-flex align-items-center">
+                <a class="navbar-brand m-2 ps-2" href="index.html">
+                    <h1 class="fw-bolder m-2" style="font-family: 'Amsterdam Four_ttf'"><span class="text-gradient d-inline">Erdinc Ozdemir</span></h1>
+                </a>
 
-
-                </div>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 fs-6 fw-bolder">
+                    <ul class="navbar-nav mb-2 mb-lg-0 fs-7 fw-bolder">
                         <li class="nav-item"><a class="nav-link mx-2" href="#header">Home</a></li>
                         <li class="nav-item"><a class="nav-link mx-2" href="#aboutMe">About Me</a></li>
                         <li class="nav-item"><a class="nav-link mx-2" href="#experience">Experience</a></li>
@@ -158,7 +310,6 @@
                         <li class="nav-item"><a class="nav-link mx-2" href="#contactMe">Contact Me</a></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </nav>
@@ -169,15 +320,6 @@
                 <div class="col-xxl-5">
                     <!-- Header text content-->
                     <div class="text-center text-xxl-start">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
                         <div class="badge bg-gradient-primary-to-secondary text-white mb-4 fs-6">
                             <div class="text-uppercase">Java &middot; Spring Boot &middot; Microservices</div>
                         </div>
@@ -185,7 +327,7 @@
                         <h1 class="display-3 fw-bolder mb-5"><span
                                 class="text-gradient d-inline">Start by Working</span></h1>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Contact
+                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="#contactMe">Contact
                                 Me!</a>
                             <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
                                href="assets/Erdinc_Ozdemir_Java_Back_CV.pdf" download="Erdinc_Ozdemir_Java_Back_CV.pdf">
@@ -193,21 +335,18 @@
                                 Download CV!
                             </a>
                         </div>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="d-flex justify-content-center fs-2 gap-4">
-                        <a class="text-gradient" href="https://www.linkedin.com/in/erdincozdemir/"><i
-                                class="bi bi-linkedin"></i></a>
-                        <a class="text-gradient"
-                           href="mailto:erdincozdemir1812@gmail.com?subject=Yeni İş Fırsatı Talebi&body=Merhaba, sizinle web siteniz üzerinden iletişime geçiyorum."><i
-                                class="bi bi-envelope-fill"></i></a>
-                        <a class="text-gradient"
-                           href="https://wa.me/905067471812?text=Merhaba%20size%20web%20siteniz%20üzerinden%20ulaşıyorum."><i
-                                class="bi bi-whatsapp"></i></a>
-                        <a class="text-gradient" href="https://github.com/ErdincOzdemirr"><i
-                                class="bi bi-github"></i></a>
+                        <div class="d-flex justify-content-center text-start fs-2 gap-4">
+                            <a href="https://www.linkedin.com/in/erdincozdemir/"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a
+                                    href="mailto:erdincozdemir1812@gmail.com?subject=Yeni İş Fırsatı Talebi&body=Merhaba, sizinle web siteniz üzerinden iletişime geçiyorum."><i
+                                    class="bi bi-envelope-fill"></i></a>
+                            <a
+                                    href="https://wa.me/905067471812?text=Merhaba%20size%20web%20siteniz%20üzerinden%20ulaşıyorum."><i
+                                    class="bi bi-whatsapp"></i></a>
+                            <a href="https://github.com/ErdincOzdemirr"><i
+                                    class="bi bi-github"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xxl-7">
@@ -483,25 +622,20 @@
                 <div class="col-xxl-8">
                     <div class="text-center my-5">
                         <h2 class="display-5 fw-bolder"><span class="text-secondary d-inline">Education</span></h2>
-                        <!-- Education Section-->
                         <section>
                             <!-- Education Card 1-->
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
-                                        <div class="col-5 text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="col-lg-5 text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
                                                 <div class="text-secondary fw-bolder mb-2">Computer Engineering</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">Kocaeli University</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Kocaeli, Turkey</div>
-                                                </div>
+                                                <div class="small fw-bolder">Kocaeli University</div>
+                                                <div class="small text-muted fst-italic">Kocaeli, Turkey</div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-7 small text-muted tabbed-paragraph">
-                                            <div>After completing my bachelor's degree in Electrical and Electronics
+                                        <div class="col-lg-7 text-muted tabbed-paragraph ">
+                                            <div class="small text-muted tabbed-paragraph">After completing my bachelor's degree in Electrical and Electronics
                                                 Engineering, I am continuing my thesis-based master's degree in Computer
                                                 Engineering at Kocaeli University.
                                             </div>
@@ -513,19 +647,15 @@
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
-                                        <div class="col-5 text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="col-lg-5 text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
                                                 <div class="text-secondary fw-bolder mb-2">Law</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">Marmara University</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Istanbul, Turkey</div>
-                                                </div>
+                                                <div class="small fw-bolder">Marmara University</div>
+                                                <div class="small text-muted fst-italic">Istanbul, Turkey</div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-7 small text-muted tabbed-paragraph">
-                                            <div>After graduating from Electrical and Electronics Engineering, I studied
+                                        <div class="col-lg-7 text-muted tabbed-paragraph ">
+                                            <div class="small text-muted tabbed-paragraph">After graduating from Electrical and Electronics Engineering, I studied
                                                 law as a hobby during the covid-19 pandemic period
                                             </div>
                                         </div>
@@ -539,63 +669,308 @@
         </div>
         </div>
     </section>
-    <!-- Skills Section-->
+    <!-- Skills Section -->
     <section id="skills" class="bg-white py-5">
         <div class="container px-5">
-            <div class="text-center my-5">
-                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">My Skill Set</span></h2>
-                <table align="center" style="width: 100%; max-width: 900px;">
-                    <tr>
-                        <td valign="top" style="padding: 20px;">
-                            <h3 class="text-center">FrontEnd</h3>
-                            <div class="row text-center">
-                                <div class="col-3 p-2"><img src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://profilinator.rishav.dev/skills-assets/angularjs-original.svg" alt="Angular" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://profilinator.rishav.dev/skills-assets/redux-original.svg" alt="Redux" width="50"/></div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-xxl-8">
+                    <div class="text-center my-5">
+                        <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">My Skill Set</span></h2>
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        Click to Learn My Skills
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <!-- Burası senin skill kartlarının olduğu bölüm -->
+                                        <section>
+                                            <div class="card shadow border-0 rounded-4 mb-5">
+                                                <div class="card-body p-5">
+                                                    <!-- FrontEnd Section -->
+                                                    <div class="mb-5">
+                                                        <div class="d-flex align-items-center mb-4">
+                                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                                                <i class="bi bi-display"></i>
+                                                            </div>
+                                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">FrontEnd</span></h3>
+                                                        </div>
+                                                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg"
+                                                                        width="30" class="me-2">HTML
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg"
+                                                                        width="30" class="me-2">CSS
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://tailwindcss.com/favicons/apple-touch-icon.png?v=4"
+                                                                        width="30" class="me-2">Tailwind CSS
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://sass-lang.com/assets/img/logos/logo.svg"
+                                                                        width="30" class="me-2">Sass
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" width="30"
+                                                                        class="me-2">JavaScript
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" width="30"
+                                                                        class="me-2">TypeScript
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://profilinator.rishav.dev/skills-assets/redux-original.svg" width="30"
+                                                                        class="me-2">Redux
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg"
+                                                                        width="30" class="me-2">React
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://profilinator.rishav.dev/skills-assets/angularjs-original.svg" width="30"
+                                                                        class="me-2">Angular
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- BackEnd Section -->
+                                                    <div class="mb-5">
+                                                        <div class="d-flex align-items-center mb-4">
+                                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                                                <i class="bi bi-code-square"></i>
+                                                            </div>
+                                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">BackEnd</span></h3>
+                                                        </div>
+                                                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://img.icons8.com/?size=512&id=13679&format=png" width="30" class="me-2">Java 8, 11, 17
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://spring.io/img/projects/spring-boot.svg" width="30" class="me-2">Spring
+                                                                    Boot
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://i.hizliresim.com/s0ko3z2.png" width="30" class="me-2">Hibernate
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://spring.io/img/projects/spring-data.svg" width="30" class="me-2">Spring
+                                                                    Data
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://spring.io/img/projects/spring-security.svg" width="30" class="me-2">Spring Security
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://i.hizliresim.com/alpqepq.png" width="30" class="me-2">Spring Cloud
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Apache_Kafka_logo.svg/154px-Apache_Kafka_logo.svg.png"
+                                                                        width="30" class="me-2">Apache Kafka
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://www.rabbitmq.com/img/rabbitmq-logo.svg"
+                                                                        width="30" class="me-2">RabbitMQ
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://img.icons8.com/color/48/redis.png" width="30" class="me-2">Redis
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://img.icons8.com/external-soft-fill-juicy-fish/60/external-microservice-microservices-soft-fill-soft-fill-juicy-fish.png"
+                                                                        width="30" class="me-2">Microservices
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://i.hizliresim.com/rds6yis.png" width="30" class="me-2">RestAPI
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://img.icons8.com/color/48/graphql.png" width="30" class="me-2">GraphQL
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Database Section -->
+                                                    <div class="mb-5">
+                                                        <div class="d-flex align-items-center mb-4">
+                                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                                                <i class="bi bi-database"></i>
+                                                            </div>
+                                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Database</span></h3>
+                                                        </div>
+                                                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://img.icons8.com/color/48/oracle-logo.png" width="30" class="me-2">OracleDB
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg"
+                                                                        width="30" class="me-2">MongoDB
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://img.icons8.com/color/48/postgreesql.png" width="30" class="me-2">PostgreSQL
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://img.icons8.com/fluency/48/mysql-logo.png" width="30" class="me-2">MySQL
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://img.icons8.com/?size=512&id=3767&format=png" width="30" class="me-2">SQL
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://min.io/resources/favs/favicon-96x96.png" width="30" class="me-2">MinIO
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- DevOps Section -->
+                                                    <div class="mb-5">
+                                                        <div class="d-flex align-items-center mb-4">
+                                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                                                <i class="bi bi-gear-wide-connected"></i>
+                                                            </div>
+                                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">DevOps</span></h3>
+                                                        </div>
+                                                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://img.icons8.com/fluency/48/docker.png" width="30" class="me-2">Docker
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://profilinator.rishav.dev/skills-assets/kubernetes-icon.svg" width="30"
+                                                                        class="me-2">Kubernetes
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://www.rancher.com/assets/img/favicon.png" width="30" class="me-2">Rancher
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://maven.java.net/favicon.png" width="30" class="me-2">Nexus
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://dt-cdn.net/images/favicon-48x48-transparent-48-9b4df9c769.png" width="30" class="me-2">Dynatrace
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://img.icons8.com/color/48/amazon-web-services.png" width="30" class="me-2">AWS
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Monitoring Section -->
+                                                    <div class="mb-0">
+                                                        <div class="d-flex align-items-center mb-4">
+                                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                                                <i class="bi bi-graph-up-arrow"></i>
+                                                            </div>
+                                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Monitoring / Logs / Tests</span></h3>
+                                                        </div>
+                                                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://img.icons8.com/color/48/kibana.png" width="30" class="me-2">Kibana
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://img.icons8.com/color/48/elasticsearch.png" width="30" class="me-2">Elasticsearch
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://graylog.org/wp-content/uploads/2024/04/Graylog_Logo_2024_icon_blueblack-01.png" width="30" class="me-2">Graylog
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://logging.apache.org/log4j/2.x/_images/favicon.ico" width="30" class="me-2">Log4j
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://junit.org/junit5/assets/img/junit5-logo.png" width="30" class="me-2">JUnit
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"><img
+                                                                        src="https://site.mockito.org/favicon.ico" width="30" class="me-2">Mockito
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
                             </div>
-                        </td>
-                        <td valign="top" style="padding: 20px;">
-                            <h3 class="text-center">BackEnd</h3>
-                            <div class="row text-center">
-                                <div class="col-3 p-2"><img src="https://img.icons8.com/?size=512&id=13679&format=png" alt="Java" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://img.icons8.com/color/48/spring-logo.png" alt="Spring" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://i.hizliresim.com/s0ko3z2.png" alt="Hibernate" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://img.icons8.com/external-soft-fill-juicy-fish/60/external-microservice-microservices-soft-fill-soft-fill-juicy-fish.png" alt="Microservice" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://i.hizliresim.com/alpqepq.png" alt="Spring Cloud" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://i.hizliresim.com/rds6yis.png" alt="Rest API" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://img.icons8.com/color/48/graphql.png" alt="GraphQL" width="50"/></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top" style="padding: 20px;">
-                            <h3 class="text-center">DataBase</h3>
-                            <div class="row text-center">
-                                <div class="col-3 p-2"><img src="https://img.icons8.com/fluency/48/mysql-logo.png" alt="MySQL" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://img.icons8.com/color/48/postgreesql.png" alt="PostgreSQL" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg" alt="MongoDB" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://img.icons8.com/?size=512&id=3767&format=png" alt="SQL" width="50"/></div>
-                            </div>
-                        </td>
-                        <td valign="top" style="padding: 20px;">
-                            <h3 class="text-center">DevOps</h3>
-                            <div class="row text-center">
-                                <div class="col-3 p-2"><img src="https://profilinator.rishav.dev/skills-assets/linux-original.svg" alt="Linux" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://img.icons8.com/fluency/48/docker.png" alt="Docker" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://profilinator.rishav.dev/skills-assets/kubernetes-icon.svg" alt="Kubernetes" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="AWS" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://profilinator.rishav.dev/skills-assets/google_cloud-icon.svg" alt="GCP" width="50"/></div>
-                                <div class="col-3 p-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="50"/></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+                        </div>
+                    </div> <!-- text-center my-5 -->
+                </div> <!-- col-xxl-8 -->
+            </div> <!-- row gx-5 justify-content-center -->
+        </div> <!-- container px-5 -->
     </section>
     <!-- Call to action section-->
     <section class="py-5 bg-gradient-primary-to-secondary text-white">
@@ -732,7 +1107,7 @@
 
             <div class="d-flex align-items-center" style="height: 100%;">
                 <a class="navbar-brand m-2 ps-2 " href="index.html">
-                    <h4 class="small m-0">Copyright &copy; Erdinc Ozdemir 2025</h4>
+                    <h4 class="m-0" style="font-size: x-small">Copyright &copy; Erdinc Ozdemir 2025</h4>
                 </a>
             </div>
 
