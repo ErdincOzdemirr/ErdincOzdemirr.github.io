@@ -1,6 +1,4 @@
 # 🌟 Erdinc Ozdemir
-<h1 align="center">🌟 Erdinc Ozdemir</h1>
-
 <p align="center">
   <b>Java Backend Developer | Microservices Enthusiast | Financial Applications</b><br><br>
   <a href="https://erdincozdemir.github.io" target="_blank">🌐 Visit My Website</a>
